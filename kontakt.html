@@ -21,26 +21,21 @@
   <body id="agencja-page">
     <header class="header">
       <div class="container">
-        <div class="header-content">
-          <div class="logo_nav">
-            <a class="webstudio" href="./index.html">
-              <span class="web">Web</span><span class="studio">Studio</span>
+        <div class="header__content-box">
+          <div class="header__logo-nav-box">
+            <a class="logo logo--header" href="./index.html">
+              <span class="logo__web">Web</span>Studio
             </a>
-
-            <nav>
-              <ul class="navigation">
-                <li>
-                  <a class="navigation-link nav-list" href="./index.html"
-                    >Agencja</a
-                  >
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="./index.html">Agencja</a>
                 </li>
-                <li>
-                  <a class="navigation-link nav-list" href="./portfolio.html"
-                    >Portfolio</a
-                  >
+                <li class="nav__item">
+                  <a class="nav__link" href="./portfolio.html">Portfolio</a>
                 </li>
-                <li>
-                  <a class="navigation-current nav-list" href="./kontakt.html"
+                <li class="nav__item">
+                  <a class="nav__link nav__link--current" href="./kontakt.html"
                     >Kontakt</a
                   >
                 </li>
@@ -48,25 +43,20 @@
             </nav>
           </div>
           <div class="contact">
-            <a class="contact-mail-1" href="mailto:info@devstudio.com">
-              <svg class="icon-header" width="16" height="10">
+            <a class="mail" href="mailto:info@devstudio.com">
+              <svg class="mail__icon" width="16" height="10">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              <span class="email">info@devstudio.com</span>
+              <span class="mail__address">info@devstudio.com</span>
             </a>
 
-            <a class="contact-phone-1" href="tel:+48111111111">
+            <a class="phone" href="tel:+48111111111">
               <div class="icon-container">
-                <svg
-                  class="icon-header"
-                  width="10"
-                  height="16"
-                  viebox="0 -4 10 16"
-                >
+                <svg class="phone__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
               </div>
-              <span class="number">+48 111 111 111</span>
+              <span class="phone__number">+48 111 111 111</span>
             </a>
           </div>
         </div>
@@ -75,23 +65,23 @@
     <main><h1 style="margin-left: 215px">PLACEHOLDER</h1></main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-column-1">
-            <a class="webstudio-footer" href="./index.html">
-              <span class="web">Web</span>Studio
+        <div class="footer__content">
+          <div class="footer__column-1">
+            <a class="logo logo--footer" href="./index.html">
+              <span class="logo__web">Web</span>Studio
             </a>
             <address>
-              <ul class="footer-list">
-                <li class="footer-address">
+              <ul class="footer__list">
+                <li class="footer__address">
                   m. Warszawa, Aleje Jerozolimskie 21
                 </li>
                 <li>
-                  <a class="contact-mail-2" href="mailto:info@example.com">
+                  <a class="footer__mail" href="mailto:info@example.com">
                     info@example.com
                   </a>
                 </li>
                 <li>
-                  <a class="contact-phone-2" href="tel:+48111111111">
+                  <a class="footer__phone" href="tel:+48111111111">
                     +48 111 111 111
                   </a>
                 </li>
@@ -99,13 +89,13 @@
             </address>
           </div>
 
-          <section class="footer-socials">
-            <h5 class="footer-socials-header">Dołącz do nas</h5>
-            <ul class="footer-socials-icons">
+          <section class="socials">
+            <h5 class="socials__header">Dołącz do nas</h5>
+            <ul class="socials__list-icons">
               <li>
-                <a href="./index.html" class="footer-link">
+                <a href="./index.html" class="socials__link">
                   <svg
-                    class="icon-footer"
+                    class="socials__icon"
                     height="44"
                     width="44"
                     viewBox="0 0 20 44"
@@ -115,9 +105,9 @@
                 </a>
               </li>
               <li>
-                <a href="./index.html" class="footer-link">
+                <a href="./index.html" class="socials__link">
                   <svg
-                    class="icon-footer"
+                    class="socials__icon"
                     height="44"
                     width="44"
                     viewBox="0 0 20 44"
@@ -127,9 +117,9 @@
                 </a>
               </li>
               <li>
-                <a href="./index.html" class="footer-link">
+                <a href="./index.html" class="socials__link">
                   <svg
-                    class="icon-footer"
+                    class="socials__icon"
                     height="44"
                     width="44"
                     viewBox="0 0 20 44"
@@ -139,9 +129,9 @@
                 </a>
               </li>
               <li>
-                <a href="./index.html" class="footer-link">
+                <a href="./index.html" class="socials__link">
                   <svg
-                    class="icon-footer"
+                    class="socials__icon"
                     height="44"
                     width="44"
                     viewBox="0 0 20 44"
@@ -152,6 +142,26 @@
               </li>
             </ul>
           </section>
+          <div class="footer__form">
+            <form class="newsletter">
+              <label class="newsletter__label" for="newsletter">
+                Zapisz się do newslettera
+              </label>
+              <input
+                id="newsletter"
+                class="newsletter__input"
+                name="newsletter"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="newsletter__submit" type="submit">
+                <span class="newsletter__button-text">Zapisz się</span>
+                <svg class="newsletter__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
