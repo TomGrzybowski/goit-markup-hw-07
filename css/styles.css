@@ -207,7 +207,7 @@ ul {
 .policy-label::before {
   display: block;
   position: absolute;
-  left: 0px;
+  left: -23px;
   top: 4px;
   content: "";
   width: 16px;
@@ -267,7 +267,7 @@ ul {
   align-content: center;
 }
 
-.header > .container > .header-content {
+.container > .header__content-box {
   width: 1170px;
   display: flex;
   justify-content: space-between;
@@ -296,7 +296,7 @@ ul {
   border-radius: 4px;
 }
 
-.logo_nav {
+.header__logo-nav-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -344,48 +344,51 @@ ul {
   cursor: pointer;
 }
 
-.webstudio {
+.logo {
   font-family: "Raleway";
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--black-color);
-  margin-right: 93px;
 }
 
-.web {
+.logo--header {
+  margin-right: 93px;
+  color: var(--black-color);
+}
+
+.logo--footer {
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+
+.logo__web {
   color: var(--company-blue);
 }
 
-.navigation > li {
+.nav__item {
   display: inline;
   margin-right: 40px;
 }
 
-.navigation > li:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.navigation-current {
+.nav__link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  color: var(--dark-font-color);
+}
+
+.nav__link--current {
   color: var(--company-blue);
   position: relative;
 }
 
-.navigation-link {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-
-  color: var(--dark-font-color);
-}
-
-.navigation-current::after {
+.nav__link--current::after {
   border-radius: 4px;
   content: "";
   width: 100%;
@@ -397,7 +400,7 @@ ul {
   left: 0;
 }
 
-.contact-mail-1 {
+.mail {
   text-decoration: none;
   color: var(--main-font-color);
   margin-right: 30px;
@@ -410,28 +413,28 @@ ul {
   transition-timing-function: var(--transition-timing);
 }
 
-.contact-mail-1:hover {
+.mail:hover {
   color: var(--company-blue);
   cursor: pointer;
 }
 
-.contact-mail-1 > .icon-header {
+.mail__icon {
   fill: var(--main-font-color);
   transition-property: fill;
   transition-duration: 0.25s;
   transition-timing-function: var(--transition-timing);
 }
 
-.contact-mail-1:hover > .icon-header,
-.contact-mail-1:focus > .icon-header {
+.mail:hover > .mail__icon,
+.mail:focus > .mail__icon {
   fill: var(--company-blue);
 }
 
-.contact-mail-1:focus {
+.mail:focus {
   color: var(--company-blue);
 }
 
-.contact-phone-1 {
+.phone {
   display: inline-flex;
   align-items: center;
 
@@ -445,32 +448,32 @@ ul {
   transition-timing-function: var(--transition-timing);
 }
 
-.number {
+.phone__number {
   margin-left: 10px;
 }
 
-.email {
+.mail__address {
   margin-left: 10px;
 }
 
-.contact-phone-1:hover {
+.phone:hover {
   color: var(--company-blue);
   cursor: pointer;
 }
 
-.contact-phone-1:focus {
+.phone:focus {
   color: var(--company-blue);
 }
 
-.contact-phone-1 > .icon-container > .icon-header {
+.phone__icon {
   fill: var(--main-font-color);
   transition-property: fill;
   transition-duration: 0.25s;
   transition-timing-function: var(--transition-timing);
 }
 
-.contact-phone-1:hover > .icon-container > .icon-header,
-.contact-phone-1:focus > .icon-container > .icon-header {
+.phone:hover .phone__icon,
+.phone:focus .phone__icon {
   fill: var(--company-blue);
 }
 
@@ -675,15 +678,6 @@ ul {
   display: flex;
   justify-content: flex-start;
   padding: 60px 0;
-}
-
-.webstudio-footer {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  color: var(--white-color);
 }
 
 .footer-list {
