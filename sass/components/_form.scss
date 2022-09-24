@@ -109,7 +109,7 @@
     appearance: none;
   }
 
-  &-submit {
+  &__submit {
     width: 200px;
     height: 50px;
     background: var(--company-blue);
@@ -118,6 +118,9 @@
     border: none;
     color: white;
     margin-top: 30px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__label:focus-within .form__icon {
