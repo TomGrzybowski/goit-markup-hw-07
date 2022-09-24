@@ -662,7 +662,7 @@
   -moz-appearance: none;
   appearance: none;
 }
-.order-submit {
+.order__submit {
   width: 200px;
   height: 50px;
   background: var(--company-blue);
@@ -673,6 +673,11 @@
   color: white;
   margin-top: 30px;
 }
+
+.order__submit:hover {
+  cursor: pointer;
+}
+
 .order__label:focus-within .form__icon {
   fill: var(--company-blue);
 }
