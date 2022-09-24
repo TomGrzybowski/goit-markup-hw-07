@@ -169,25 +169,6 @@ ul {
   margin-top: 30px;
 }
 
-.footer__form {
-  width: 575px;
-  margin-left: 78px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.newsletter__input {
-  width: 358px;
-  height: 50px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  margin-top: 20px;
-  padding-left: 16px;
-  background-color: transparent;
-}
-
 .policy-label {
   margin-left: 15px;
   font-size: 14px;
@@ -225,6 +206,24 @@ ul {
 .policy-check:checked + .policy-label::before {
   border: none;
   background-image: url("../images/icons/check.svg");
+}
+.footer__form {
+  width: 575px;
+  margin-left: 78px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter__input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-left: 16px;
+  background-color: transparent;
 }
 
 .newsletter__submit {
@@ -291,7 +290,7 @@ ul {
   padding-bottom: 94px;
 }
 
-.agencja__icon {
+.content__icon {
   background-color: var(--light-background-color);
   border-radius: 4px;
 }
@@ -489,7 +488,6 @@ ul {
 .content__list {
   display: flex;
   gap: 30px;
-  /* margin-left: 215px; */
 }
 
 .content__header {
@@ -556,7 +554,7 @@ ul {
   font-size: 14px;
 }
 
-.agencja-team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -607,12 +605,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team__icons-list {
+.team__sm {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
 }
-.team__icons-list > li {
+.team__sm > li {
   margin: 0;
 }
 .team__icon {
@@ -623,7 +621,7 @@ ul {
   transition-timing-function: var(--transition-timing);
 }
 
-.team__icons-list > li:first-child {
+.team__sm > li:first-child {
   margin-left: 32px;
 }
 
@@ -667,8 +665,6 @@ ul {
 }
 
 .footer {
-  /* height: 252px; */
-
   background: var(--dark-background-color);
 }
 
@@ -773,18 +769,13 @@ ul {
   top: 13px;
   left: 148px;
   /* margin-left: 24px;
-  margin-top: 13px; */
+                                                                margin-top: 13px; */
 }
 
 .newsletter__button-text {
   position: absolute;
   top: 10px;
   left: 42px;
-}
-
-.main {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .filters {
