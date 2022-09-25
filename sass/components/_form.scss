@@ -40,11 +40,19 @@
   position: absolute;
   top: 8px;
   left: 490px;
-}
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.close-btn:hover,
-.close-btn:focus {
-  cursor: pointer;
+  &:hover{
+    background-color: var(--light-background-color);
+    cursor: pointer;
+  }
+  
+  &:focus{
+    background-color: var(--light-background-color);
+    cursor: pointer;
+  }
 }
 
 .order {
@@ -107,6 +115,10 @@
     width: 16px;
     cursor: pointer;
     appearance: none;
+
+    position: relative;
+    top: 2px;
+    left: 12px;
   }
 
   &__submit {
@@ -118,7 +130,9 @@
     border: none;
     color: white;
     margin-top: 30px;
-    &:hover {
+    &:hover,
+    :focus {
+      text-decoration: underline;
       cursor: pointer;
     }
   }
@@ -163,6 +177,14 @@
   }
 }
 
+.order__policy-label > a{
+  text-decoration: none;
+  &:hover,
+  :focus {
+    text-decoration: underline;
+  }
+}
+
 .form__icon {
   width: 13px;
   height: 13px;
@@ -174,3 +196,8 @@
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.checkbox-wrapper {
+  position: relative;
+}
+

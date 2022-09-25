@@ -586,10 +586,19 @@
   position: absolute;
   top: 8px;
   left: 490px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.close-btn:hover,
+.close-btn:hover {
+  background-color: var(--light-background-color);
+  cursor: pointer;
+}
 .close-btn:focus {
+  background-color: var(--light-background-color);
   cursor: pointer;
 }
 
@@ -660,6 +669,9 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  position: relative;
+  top: 2px;
+  left: 12px;
 }
 .order__submit {
   width: 200px;
@@ -672,7 +684,9 @@
   color: white;
   margin-top: 30px;
 }
-.order__submit:hover {
+.order__submit:hover,
+.order__submit :focus {
+  text-decoration: underline;
   cursor: pointer;
 }
 .order__label:focus-within .form__icon {
@@ -709,6 +723,14 @@
   background-image: url("../images/icons/check.svg");
 }
 
+.order__policy-label > a {
+  text-decoration: none;
+}
+.order__policy-label > a:hover,
+.order__policy-label > a :focus {
+  text-decoration: underline;
+}
+
 .form__icon {
   width: 13px;
   height: 13px;
@@ -722,6 +744,10 @@
           transition-duration: 0.25s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-wrapper {
+  position: relative;
 }
 
 .title {
@@ -776,6 +802,11 @@
   letter-spacing: 0.06em;
 }
 .container > .title__button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container > .title__button:focus {
+  text-decoration: underline;
   cursor: pointer;
 }
 

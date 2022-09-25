@@ -49,6 +49,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &:focus {
+    text-decoration: underline;
     cursor: pointer;
   }
 }
