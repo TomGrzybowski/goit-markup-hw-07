@@ -48,12 +48,19 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
   &:hover {
     text-decoration: underline;
-    cursor: pointer;
+  cursor: pointer;
+  background: var(--dark-blue);
   }
   &:focus {
     text-decoration: underline;
-    cursor: pointer;
+  cursor: pointer;
+  background: var(--dark-blue);
   }
 }

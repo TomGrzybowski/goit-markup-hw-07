@@ -130,10 +130,14 @@
     border: none;
     color: white;
     margin-top: 30px;
+    transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     :focus {
       text-decoration: underline;
       cursor: pointer;
+      background-color: var(--dark-blue);
     }
   }
 

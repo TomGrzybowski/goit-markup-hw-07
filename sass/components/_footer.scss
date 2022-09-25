@@ -128,10 +128,38 @@
     margin-left: 12px;
 
     position: relative;
+    top: -10px;
+
+    transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
+      text-decoration: underline;
       cursor: pointer;
+      background-color: var(--dark-blue);
     }
+    &:hover .newsletter__button-text {
+      text-decoration: underline;
+    }
+    &:focus {
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: var(--dark-blue);
+    }
+    &:focus .newsletter__button-text{
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: var(--dark-blue);
+    }
+
+.newsletter__button-text{
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
   }
   &__label {
     width: 358px;

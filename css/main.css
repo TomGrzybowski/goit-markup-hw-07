@@ -15,6 +15,7 @@
   --grey-opaque: rgba(47, 48, 58, 0.8);
   --blue-opaque: rgba(33, 150, 243, 0.9);
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --dark-blue: rgb(53, 90, 255);
 }
 
 .logo {
@@ -333,9 +334,39 @@
   line-height: 1.88;
   margin-left: 12px;
   position: relative;
+  top: -10px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter__submit:hover {
+  text-decoration: underline;
   cursor: pointer;
+  background-color: var(--dark-blue);
+}
+.newsletter__submit:hover .newsletter__button-text {
+  text-decoration: underline;
+}
+.newsletter__submit:focus {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+}
+.newsletter__submit:focus .newsletter__button-text {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+}
+.newsletter__submit .newsletter__button-text {
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter__label {
   width: 358px;
@@ -683,11 +714,18 @@
   border: none;
   color: white;
   margin-top: 30px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order__submit:hover,
 .order__submit :focus {
   text-decoration: underline;
   cursor: pointer;
+  background-color: var(--dark-blue);
 }
 .order__label:focus-within .form__icon {
   fill: var(--company-blue);
@@ -800,14 +838,22 @@
           align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container > .title__button:hover {
   text-decoration: underline;
   cursor: pointer;
+  background: var(--dark-blue);
 }
 .container > .title__button:focus {
   text-decoration: underline;
   cursor: pointer;
+  background: var(--dark-blue);
 }
 
 .filters {
